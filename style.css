@@ -282,4 +282,9 @@ a.arrow:hover {
     visibility: visible;
     height: auto;
   }
+
+  .social-buttons {
+    /* always show */
+    display: flex;
+  }
 }
