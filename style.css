@@ -1,0 +1,285 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Signika");
+@import url("https://api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.css");
+@import url("https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css");
+html {
+  font-family: 'Signika', sans-serif;
+}
+
+body {
+  background: #DDD7D1;
+}
+
+h1 {
+  padding-bottom: 0px;
+}
+
+.logo {
+  width: 15%;
+  height: 15%;
+  min-width: 150px;
+}
+
+.container {
+  background: #00C993;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2050px;
+  color: white;
+  text-align: center;
+  min-width: 24px;
+}
+
+.section {
+  position: absolute;
+  display: block;
+  width: 100%;
+  color: white;
+  text-align: left;
+}
+
+#social-buttons {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.social-button {
+  display: inline-block;
+  align-self: center;
+  list-style-position: inside;
+}
+
+#sect1 {
+  top: 600px;
+}
+
+#sect2 {
+  top: 1100px;
+}
+
+#sect3 {
+  top: 1600px;
+}
+
+#footer {
+  top: 2050px;
+  height: 50px;
+  text-align: center;
+}
+
+#discord {
+  float: left;
+  width: 20%;
+  font-size: 5em;
+  padding-left: 15%;
+}
+
+#strava {
+  float: left;
+  width: 20%;
+  font-size: 5em;
+  padding-left: 15%;
+}
+
+#icon-button {
+  font-size: 3em;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  display: inline-block;
+}
+
+#rocket {
+  float: right;
+  width: 20%;
+  font-size: 5em;
+  padding-left: 15%;
+}
+
+#hiddenIcon {
+  text-align: center;
+  visibility: hidden;
+  height: 0;
+  font-size: 5em;
+}
+
+.anchor {
+  height: 100px;
+}
+
+.divider {
+  width:5px;
+  height:auto;
+  display:inline-block;
+}
+
+.explanation {
+  min-width: 12.42em;
+  float: left;
+  width: 40%;
+}
+
+.explanation-right {
+  min-width: 12.42em;
+  float: left;
+  text-align: right;
+  padding-left: 5%;
+  width: 40%;
+}
+
+#phone {
+  background: #DDD7D1;
+  border-radius: 25px;
+  box-shadow: 0 0.5em 0 #BCB1A5;
+  padding: 5px 5px 10px 5px;
+  width: 20%;
+  min-width: 200px;
+  max-width: 200px;
+  margin-right: 5%;
+  float: left;
+}
+
+#screenshot {
+  border-radius: 25px;
+}
+
+#screen {
+  background: #ffffff;
+  border-radius: 25px;
+  height: 440px;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  min-width: 200px;
+}
+
+.shrink-on-hover {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.shrink-on-hover:hover, .shrink-on-hover:focus, .shrink-on-hover:active {
+  -webkit-transform: scale(0.8,0.8);
+  transform: scale(0.8,0.8);
+}
+
+h1, h3 {
+  font-family: 'Signika', sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 5em;
+  line-height: 1em;
+  /*margin-bottom: 1em;*/
+}
+
+a {
+  color: white;
+}
+
+a.arrow {
+  color: white;
+  text-align: center;
+  font-size: 3em;
+  text-decoration: none;
+  padding-bottom: 20px;
+  /*transition cross-browser stuff*/
+  -webkit-transition: font-size 0.2s ease-out;
+  /* Safari 3.2+, Chrome */
+  -moz-transition: font-size 0.2s ease-out;
+  /* Firefox 4-15 */
+  -o-transition: font-size 0.2s ease-out;
+  /* Opera 10.5–12.00 */
+  transition: font-size 0.2s ease-out;
+  /* Firefox 16+, Opera 12.50+ */
+}
+
+a.arrow:hover {
+  font-size: 3.3em;
+}
+
+@media only screen and (min-width: 767px) {
+  body {
+    font-size: 1.125em;
+    /* 18px / 16px */
+  }
+
+  .container {
+    background-size: 100%;
+  }
+
+  .container h1 {
+    font-size: 3.25em;
+    /*52 / 16*/
+  }
+
+  a.button {
+    padding: .75em 1.5em;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .explanation {
+    float: none;
+    margin: auto;
+    text-align: center;
+  }
+
+  .explanation-right {
+    float: none;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    padding-left: 0%;
+  }
+/* 
+  #sect1 {
+    top: 350px;
+  }
+
+  #sect2 {
+    top: 750px;
+  }
+
+  #sect3 {
+    top: 1050px;
+  } */
+
+  #rocket {
+    visibility: hidden;
+    padding-left: 0em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #discord {
+    visibility: hidden;
+    padding-left: 0em;
+  }
+
+  #strava {
+    visibility: hidden;
+    padding-left: 0em;
+  }
+
+  #social-buttons {
+    /* align to center of page */
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+  }
+
+  #hiddenIcon {
+    visibility: visible;
+    height: auto;
+  }
+}
